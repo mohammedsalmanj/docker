@@ -97,8 +97,10 @@ docker inspect hello-world
 
 # Run a Docker container
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+docker run -d --name cafewebsite -p 9080:80 cafeimg
 # Explanation: Starts a new Docker container based on the specified image.
 
 # Execute a command in a running container
 docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+docker exec -it myweb /bin/bash
 # Explanation: Runs a command inside a running Docker container.
