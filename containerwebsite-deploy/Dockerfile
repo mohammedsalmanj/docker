@@ -26,3 +26,6 @@ VOLUME /var/log/apache2
 
 # Add the contents of barista.tar.gz into the container
 ADD barista.tar.gz /var/www/html/
+
+# 
+COPY barista.tar.gz /var/www/html/
