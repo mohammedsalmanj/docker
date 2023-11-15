@@ -1,5 +1,6 @@
 
 # Build Image
+docker pull dockerlrnz1/cafeimg
 
 https://www.tooplate.com/zip-templates/2137_barista_cafe.zip
 
