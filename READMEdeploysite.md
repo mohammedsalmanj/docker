@@ -53,7 +53,6 @@ docker ps
 # List all Docker containers (both running and stopped)
 docker ps -a
 
-# Incorrect command (typo): 'docker imahes' should be 'docker images'
 docker images
 
 # Run a Docker container in detached mode (-d) named 'cafewebsite,' mapping host port 9080 to container port 80
