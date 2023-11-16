@@ -23,3 +23,16 @@ systemctl status docker
 
 # List Docker images
 sudo docker images
+
+
+
+# Add the Ubuntu user to the 'docker' group (Option 1 - without sudo)
+usermod -aG docker ubuntu
+# Explanation: Adds the user 'ubuntu' to the 'docker' group. This allows the user to run Docker commands without sudo.
+
+# Add the Ubuntu user to the 'docker' group (Option 2 - with sudo, recommended for Ubuntu)
+sudo usermod -aG docker ubuntu
+# Explanation: Same as the previous command, but using 'sudo' to ensure elevated privileges for modifying user groups.
+
+# Display user information to confirm group membership
+id ubuntu

@@ -88,4 +88,9 @@ docker login
 docker push yourdockerhubusername/cafeimg:version1.0
 
 
+#  once uploaded to repo, use below command to pull and run
+
+docker run -d --name cafewebsite -p 9080:80 dockerlrnz1/cafeimg:version2.0
+
+
 
